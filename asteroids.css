@@ -1,11 +1,31 @@
-h1 {
-  text-align: center;
+body {
   font-family: sans-serif;
+  text-align: center;
 }
 
-canvas {
+div.stats {
+  text-align: left;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 10%;
+  background: rgba(255, 255, 255, 0.5);;
+}
+
+p {
+  font-style: italic;
+}
+
+.game {
+  width: auto;
   background-color: #eee;
   border: 5px solid black;
-  display: block;
+  display: inline-block;
   margin: auto;
+  position: relative;
+}
+
+canvas{
+  margin: 0;
+  padding: 0;
 }

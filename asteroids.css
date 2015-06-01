@@ -3,13 +3,30 @@ body {
   text-align: center;
 }
 
-div.stats {
+div.game div.stats {
   text-align: left;
   position: absolute;
   padding-left: 10px;
   padding-right: 10px;
   width: 10%;
   background: rgba(255, 255, 255, 0.5);;
+}
+
+div.game div.game-over-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.game-over-message p {
+  transition: opacity 0.15s;
+  opacity: 1;
+}
+
+.hidden p {
+  opacity: 0;
 }
 
 p {

@@ -12,6 +12,9 @@
       <p>Bullets: <strong class="bullet-count">0</strong></p>
       <p>Time: <strong class="timer">0</strong></p>
     </div>
+    <div class="game-over-message hidden">
+      <p>Press space to play again</p>
+    </div>
     <canvas width="800" height="600" id="game-canvas"></canvas>
   </div>
   <script src="vendor/jquery.js", type="text/javascript"></script>
@@ -27,9 +30,7 @@
 
   <script type="text/javascript">
     var canvas = document.getElementById('game-canvas');
-    var context = canvas.getContext('2d');
-    var game = new Asteroids.Game();
-    var gameView = new Asteroids.GameView(game, context);
+    var gameView = new Asteroids.GameView(canvas);
     gameView.start();
   </script>
 </body>
